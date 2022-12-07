@@ -30,14 +30,14 @@ body {
 
 @media only screen and (min-width:320px) and (max-width:360px){
 	.arrow {
-		width:15%;
+		width:20%;
 		right:-160%;
 		top:49%;
 	}
 }
 @media only screen and (min-width:361px) and (max-width:490px){
 	.arrow {
-		width:15%;
+		width:17%;
 		right:-110%;
 		top:49%;
 	}
@@ -103,14 +103,14 @@ span {
 	clip-path: polygon(0 92%, 100% 50%, 0 8%);
 	background-color: #2ec4b6;
 	top: 108px;
-	left: 0;
+	left: 0px;
 }
 
 .span2 {
 	clip-path: polygon(100% 92%, 0 50%, 100% 8%);
 	background-color: #fb5607;
 	top: 108px;
-	right: 0;
+	right: 0px;
 }
 
 .span3 {
