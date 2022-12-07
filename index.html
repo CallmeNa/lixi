@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://cdn.jsdelivr.net/npm/tsparticles-preset-fireworks@2/tsparticles.preset.fireworks.bundle.min.js"></script>
+    <title>Lì xì Tết</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.write(unescape("%3Cscript%3Efunction%20setCookie%28cname%2C%20cvalue%2C%20exdays%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20const%20d%20%3D%20new%20Date%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20d.setTime%28d.getTime%28%29%20+%20%28exdays%20*%2024%20*%2060%20*%2060%20*%201000%29%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20let%20expires%20%3D%20%22expires%3D%22%20+%20d.toUTCString%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20document.cookie%20%3D%20cname%20+%20%22%3D%22%20+%20cvalue%20+%20%22%3B%22%20+%20expires%20+%20%22%3Bpath%3D/%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20function%20getCookie%28cname%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20let%20name%20%3D%20cname%20+%20%22%3D%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20let%20ca%20%3D%20document.cookie.split%28%27%3B%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20for%20%28let%20i%20%3D%200%3B%20i%20%3C%20ca.length%3B%20i++%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20c%20%3D%20ca%5Bi%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20while%20%28c.charAt%280%29%20%3D%3D%20%27%20%27%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20c%20%3D%20c.substring%281%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20%28c.indexOf%28name%29%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20c.substring%28name.length%2C%20c.length%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20%22%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20function%20checkCookie%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20let%20user%20%3D%20getCookie%28%22username%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20%28user%20%21%3D%20%22%22%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20alert%28%22%u0110%E3%20b%u1EA3o%20quay%20%u0111%u01B0%u1EE3c%201%20l%u1EA7n%20th%F4i%20m%E0%20refresh%20trang%20n%u1EEFa%20-.-%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20document.getElementById%28%27spinButton%27%29.style.pointerEvents%3D%22none%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20user%20%3D%20prompt%28%22Please%20enter%20your%20name%3A%22%2C%20%22%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20%28user%20%21%3D%20%22%22%20%26%26%20user%20%21%3D%20null%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20setCookie%28%22username%22%2C%20user%2C%20365%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3C/script%3E"));
+    </script>
+    <script>
+        document.write(unescape("%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js%22%3E%3C/script%3E"));
+    </script>
+</head>
+
+<body onload="checkCookie()">
+    <script>
+        document.write(unescape("%3Cscript%3E%0A%20%20%20%20%28async%20%28%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20await%20tsParticles.load%28%22tsparticles%22%2C%20%7B%0A%20%20%20%20%20%20%20%20%20%20preset%3A%20%22fireworks%22%2C%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20%7D%29%28%29%3B%0A%20%20%20%20%20%20%3C/script%3E"));
+    </script>
+    <audio autoplay loop>
+        <source src="./LamGiPhaiHot-JustaTee_ HoangThuyL.mp3" type="audio/mpeg">
+        <!-- <audio src="./Xo-So-Mien-Bac-Nhac-Chuong-V-A-V-A.mp3"></audio> -->
+    </audio>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-8">
+                <div class="mainbox" id="mainbox">
+    
+                    <div class="box" id="box">
+            
+                        <div class="box1">
+                            <span class="span1"><b>Nhận 10k</b></span>
+                            <span class="span2"><b>Mất lượt</b></span>
+                            <span class="span3"><b>Nhận 20k</b></span>
+                            <span class="span4"><b>Nhận 5k</b></span>
+                        </div>
+                        <div class="box2">
+                            <span class="span1"><b>Nhận 50k</b></span>
+                            <span class="span2"><b>Nhận 100k</b></span>
+                            <span class="span3"><b>Nhận 200k</b></span>
+                            <span class="span4"><b>Nhận 500k</b></span>
+                        </div>
+                        <button class="spin" onclick="spin()" id="spinButton">SPIN</button>
+            
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-2">
+                <img src="./109618.png" alt="" srcset="" class="arrow">
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<script>
+
+    document.write(unescape("%3Cscript%3E%0Avar%20i%3D0%3B%0A%0Afunction%20spin%28%29%20%7Bif%28i%3D%3D1%29%7Balert%28%27Quay%201%20l%u1EA7n%20th%F4i%20b%u1EA1n%2C%20b%u1EA1n%20tham%20nam%20qu%E1%20%3A%29%29%27%29%7Dif%28i%3E1%29%7Balert%28%27%u0110%E3%20b%u1EA3o%20quay%201%20l%u1EA7n%20thui%20m%E0%27%29%7Dif%28i%3D%3D0%29%7Blet%20deg%3D360%3Blet%20delay%3D3800%3Bdeg%3Ddeg*%28Math.floor%28Math.random%28%29%20*%207%29+1%29+%28Math.floor%28Math.random%28%29%20*%20%2820%20+%2020%29%20%29%20-%2020%29%3Bdocument.getElementById%28%27box%27%29.style.transform%20%3D%20%22rotate%28%22%20+%20deg%20+%20%22deg%29%22%3BsetTimeout%28thongbao%2Cdelay%29%7D%3Bi%3Di+1%3B%7D%0Afunction%20thongbao%28%29%7Balert%28%27Ch%FAc%20b%u1EA1n%20may%20m%u1EAFn%20l%u1EA7n%20sau%20%3A%29%29%27%29%3B%7D%0A%3C/script%3E"));
+
+
+    document.write(unescape("%3Cstyle%3E%0A*%20%7B%0A%09box-sizing%3A%20border-box%3B%0A%09padding%3A%200%3B%0A%09margin%3A%200%3B%0A%09outline%3A%20none%3B%0A%7D%0Abody%20%7B%0A%09font-family%3A%20SansSerif%3B%0A%09display%3A%20flex%3B%0A%09justify-content%3A%20center%3B%0A%09align-items%3A%20center%3B%0A%09height%3A%20100vh%3B%0A%09background%3A%20white%3B%0A%09background-size%3A%20cover%3B%0A%09overflow%3A%20hidden%3B%0A%7D%0A%0A.mainbox%20%7B%0A%09position%3A%20relative%3B%0A%09width%3A%20450px%3B%0A%09height%3A%20450px%3B%0A%09margin-left%3A%20auto%3B%0A%7D%0A.arrow%20%7B%0A%09position%3A%20absolute%3B%0A%7D%0A%0A@media%20only%20screen%20and%20%28max-width%3A516px%29%20%7B%0A%09.arrow%20%7B%0A%09%09width%3A6%25%3B%0A%09%09right%3A5px%3B%0A%09%09top%3A49%25%3B%0A%09%7D%0A%7D%0A@media%20only%20screen%20and%20%28min-width%3A517px%29%7B%0A%09.arrow%20%7B%0A%09%09width%3A6%25%3B%0A%09%09right%3A10px%3B%0A%09%09top%3A49%25%3B%0A%09%7D%0A%7D%0A@media%20only%20screen%20and%20%28min-width%3A518px%29%20and%20%28max-width%3A549px%29%20%7B%0A%09.arrow%20%7B%0A%09%09width%3A6%25%3B%0A%09%09right%3A%2020px%3B%0A%09%09top%3A49%25%3B%0A%09%7D%0A%7D%0A@media%20only%20screen%20and%20%28min-width%3A550px%29%20and%20%28max-width%3A574px%29%20%7B%0A%09.arrow%20%7B%0A%09%09width%3A6%25%3B%0A%09%09right%3A%2030px%3B%0A%09%09top%3A49%25%3B%0A%09%7D%0A%7D%0A@media%20only%20screen%20and%20%28min-width%3A575px%29%20and%20%28max-width%3A624px%29%20%7B%0A%09.arrow%20%7B%0A%09%09width%3A6%25%3B%0A%09%09right%3A%2040px%3B%0A%09%09top%3A49%25%3B%0A%09%7D%0A%7D%0A@media%20only%20screen%20and%20%28min-width%3A625px%29%20and%20%28max-width%3A650px%29%20%7B%0A%09.arrow%20%7B%0A%09%09width%3A6%25%3B%0A%09%09right%3A50px%3B%0A%09%09top%3A49%25%3B%0A%09%7D%0A%7D%0A@media%20only%20screen%20and%20%28min-width%3A650px%29%20and%20%28max-width%3A675px%29%20%7B%0A%09.arrow%20%7B%0A%09%09width%3A6%25%3B%0A%09%09right%3A60px%3B%0A%09%09top%3A49%25%3B%0A%09%7D%0A%7D%0A@media%20only%20screen%20and%20%28min-width%3A675px%29%20and%20%28max-width%3A719px%29%20%7B%0A%09.arrow%20%7B%0A%09%09width%3A6%25%3B%0A%09%09right%3A100px%3B%0A%09%09top%3A49%25%3B%0A%09%7D%0A%7D%0A@media%20only%20screen%20and%20%28min-width%3A720px%29%20%7B%0A%09.arrow%20%7B%0A%09%09width%3A4%25%3B%0A%09%09right%3A%20auto%3B%0A%09%09top%3A49%25%3B%0A%09%7D%0A%7D%0A%0A%0A.box%20%7B%0A%09width%3A%20100%25%3B%0A%09height%3A%20100%25%3B%0A%09position%3A%20relative%3B%0A%09border-radius%3A%2050%25%3B%0A%09border%3A%2010px%20solid%20white%3B%0A%09overflow%3A%20hidden%3B%0A%09transition%3A%20all%20ease%204s%3B%0A%7D%0A%0Aspan%20%7B%0A%09width%3A%2050%25%3B%0A%09height%3A%2050%25%3B%0A%09display%3A%20inline-block%3B%0A%09position%3A%20absolute%3B%0A%7D%0A%0A.span1%20%7B%0A%09clip-path%3A%20polygon%280%2092%25%2C%20100%25%2050%25%2C%200%208%25%29%3B%0A%09background-color%3A%20%232ec4b6%3B%0A%09top%3A%20105px%3B%0A%09left%3A%200%3B%0A%7D%0A%0A.span2%20%7B%0A%09clip-path%3A%20polygon%28100%25%2092%25%2C%200%2050%25%2C%20100%25%208%25%29%3B%0A%09background-color%3A%20%23fb5607%3B%0A%09top%3A%20110px%3B%0A%09right%3A%200%3B%0A%7D%0A%0A.span3%20%7B%0A%09clip-path%3A%20polygon%2850%25%200%2C%208%25%20100%25%2C%2092%25%20100%25%29%3B%0A%09background-color%3A%20green%3B%0A%09bottom%3A%200px%3B%0A%09left%3A%20105px%3B%0A%7D%0A%0A.span4%20%7B%0A%09clip-path%3A%20polygon%2850%25%20100%25%2C%2092%25%200%25%2C%208%25%200%25%29%3B%0A%09background-color%3A%20purple%3B%0A%09top%3A%200px%3B%0A%09left%3A%20110px%3B%0A%7D%0A%0A.box2%20%7B%0A%09width%3A%20100%25%3B%0A%09height%3A%20100%25%3B%0A%09transform%3A%20rotate%28-135deg%29%3B%0A%7D%0A%0Aspan%20b%20%7B%0A%09width%3A%2065px%3B%0A%09height%3A%2065px%3B%0A%09font-size%3A%2022px%3B%0A%09text-align%3A%20center%3B%0A%09position%3A%20absolute%3B%0A%09top%3A%2050%25%3B%0A%09bottom%3A%205%25%3B%0A%09left%3A%2050%25%3B%0A%09transform%3A%20translate%28-50%25%2C%20-50%25%29%3B%0A%7D%0A%0A.spin%20%7B%0A%09position%3A%20absolute%3B%0A%09top%3A%2050%25%3B%0A%09left%3A%2050%25%3B%0A%09transform%3A%20translate%28-50%25%2C%20-50%25%29%3B%0A%09width%3A%2075px%3B%0A%09height%3A%2075px%3B%0A%09border-radius%3A%2050%25%3B%0A%09border%3A%204px%20solid%20white%3B%0A%09background-color%3A%20%23ff5722%3B%0A%09color%3A%20white%3B%0A%09box-shadow%3A%200%205px%2020px%20white%3B%0A%09font-weight%3A%20bold%3B%0A%09font-size%3A%2022px%3B%0A%09cursor%3A%20pointer%3B%0A%7D%0A%0A.spin%3Aactive%20%7B%0A%09width%3A%2070px%3B%0A%09height%3A%2070px%3B%0A%09font-size%3A%2020px%3B%0A%7D%0A%0A%3C/style%3E"));
+
+
+</script>
+
+</html>
